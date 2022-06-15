@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: rgb(19, 26, 63);
+
+}
+
+header{
+    background-color: rgb(40, 51, 107);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+header nav button{
+    padding: .5rem 1rem .5rem 1rem;
+    border: none;
+    background-color:  hsl(0, 0%, 95%);
+
+
+}
+header nav h1{
+    
+    font-weight: bolder;
+    font-size: xx-large;
+    color: hsl(0, 0%, 95%);
+
+}
+header nav a button{
+    text-decoration: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(40, 51, 107);
+}
+
+header nav button:hover{
+    transform: scale(1.02,1.02);
+    background-color: rgb(40, 51, 107);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    transition: ease-in-out 200ms;
+
+}
+header nav button a:hover{
+    color: hsl(0, 0%, 95%);
+    transition: ease-in-out 200ms;
+
+
+}
+
+
+
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "first  first first two two"
+    "first  first first two two"
+    "third third fourth fourth fourth"
+    "third third fifth fifth fifth";
+   
+    gap: .8rem;
+    grid-auto-rows: auto;
+    margin: 0 auto;
+    width: 60% ;
+    
+    margin-top: 3rem;
+
+
+}
+
+
+div{
+    
+    height: 8rem;
+}
+
+div.first{
+background-color: rgb(24, 223, 223);
+grid-area: first;
+height: 12rem;
+
+
+}
+
+div.two{
+background-color: rgb(10, 197, 19);
+grid-area: two;
+height: 12rem;
+
+
+
+
+}
+div.third{
+    background-color: rgb(37, 51, 173);
+    grid-area: third;
+    height: 12rem;
+
+
+
+}
+div.fourth{
+    background-color: rgb(221, 63, 23);
+    grid-area: fourth;
+    height: 5rem;
+    
+}
+div.fifth{
+    background-color: rgb(189, 31, 136);
+    grid-area: fifth;
+    height: 6.2rem;
+    
+
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    main{
+        grid-template-areas: 
+        "first first"
+        "first first"
+        "two third"
+        "two third"
+        "fourth fourth"
+        "fifth fifth";
+
+        margin-bottom: 2rem;
+       
+    }
+
+    div.fourth{
+        height: 12rem;
+    }
+    div.fifth{
+        height: 12rem;
+    }
+  
+}
+
+@media screen and (max-width: 550px){
+    main{
+        grid-template-areas: 
+        "first"
+        "two"
+        "third"
+        "fourth"
+        "fifth"
+        ;
+    }
+}
