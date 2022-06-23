@@ -152,6 +152,7 @@ div.luxury button:hover{
     main{
         
         margin-top: 15rem;
+        
     }
 
 }
@@ -161,5 +162,20 @@ div.luxury button:hover{
     
         margin-top: 25rem;
         margin-bottom: 10rem;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+}
+@media screen and (max-width: 400px){
+
+    main{
+        margin-top: 28rem;
+    }
+
+    main div {
+        
+        background-color: red;
+        width: 18rem;
+    }
+
 }
